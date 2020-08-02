@@ -52,36 +52,113 @@
       </section>
       <!-- table -->
       <section class="section">
-      <div class="table-container ">
+
+        <div class="columns">
+          <div class="column">
+
+
+
+      <div class="table-container">
         <table class="table is-bordered">
             <caption class="Text has-text-weight-bold"; style="font-size:50px; background-color: rebeccapurple; color:white;">Class Schedule</caption>
             <tr>
-              <td class="Text has-text-weight-bold";style="font-size:30px;">MONDAY</td>
-              <td><button class="button is-warning is-rounded is-medium">Seminar (8AM-11AM)</button></td>
+              <td class="Text has-text-weight-bold";style="font-size:30px;" ;style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('monday').innerHTML">MONDAY</td>
+              <td><button class="button is-warning is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('seminar').innerHTML">Seminar (8AM-11AM)</button></td>
             </tr>
             <tr>
-              <td class="Text has-text-weight-bold";style="font-size:30px;">TUESDAY</td>
-              <td><button class="button is-danger is-rounded is-medium">Webtech (8AM-10AM, 12.30PM-2.30PM)</button> <button class="button is-danger is-rounded is-medium">ENGLISH: STRUCTURE (2.30PM-4PM)</button></td>
+              <td class="Text has-text-weight-bold";style="font-size:30px;" style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('tuesday').innerHTML">TUESDAY</td>
+              <td><button class="button is-danger is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('webtech').innerHTML">Webtech (8AM-10AM, 12.30PM-2.30PM)</button> <button class="button is-danger is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('eng4').innerHTML">ENGLISH: STRUCTURE (2.30PM-4PM)</button></td>
             </tr>
             <tr>
-              <td class="Text has-text-weight-bold";style="font-size:30px;">WEDNESDAY</td>
-              <td><button class="button is-success is-rounded is-medium">IP (9.30AM-11AM)</button> <button class="button is-success is-rounded is-medium">OS (12PM-2PM)</button> <button class="button is-success is-rounded is-medium">SA (2PM-6PM)</button></td>
+              <td class="Text has-text-weight-bold";style="font-size:30px;" style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('wednesday').innerHTML">WEDNESDAY</td>
+              <td><button class="button is-success is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('ip').innerHTML">IP (9.30AM-11AM)</button> <button class="button is-success is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('os').innerHTML">OS (12PM-2PM)</button> <button class="button is-success is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('sa').innerHTML">SA (2PM-6PM)</button></td>
             </tr>
             <tr>
-              <td class="Text has-text-weight-bold";style="font-size:30px;">THURSDAY</td>
-              <td><button class="button has-background-danger-dark has-text-white-bis is-rounded is-medium">ENGLISH: STRUCTURE (2.30PM-4PM)</button></td>
+              <td class="Text has-text-weight-bold";style="font-size:30px;"style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('thursday').innerHTML">THURSDAY</td>
+              <td><button class="button has-background-danger-dark has-text-white-bis is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('eng4').innerHTML">ENGLISH: STRUCTURE (2.30PM-4PM)</button></td>
             </tr>
             <tr>
-                <td class="Text has-text-weight-bold";style="font-size:30px;">FRIDAY</td>
-                <td><button class="button is-info is-rounded is-medium">IP (9.30AM-11AM)</button> <button class="button is-info is-rounded is-medium">OS (12PM-2PM)</button></td>
+                <td class="Text has-text-weight-bold";style="font-size:30px;"style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('friday').innerHTML">FRIDAY</td>
+                <td><button class="button is-info is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('ip').innerHTML">IP (9.30AM-11AM)</button> <button class="button is-info is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('os').innerHTML">OS (12PM-2PM)</button></td>
             </tr>
             <tr>
-                <td class="Text has-text-weight-bold";style="font-size:30px;">SATURDAY</td>
-                <td><button class="button is-link is-rounded is-medium">ERP (8AM-12PM)</button></td>
+                <td class="Text has-text-weight-bold";style="font-size:30px;" style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('saturday').innerHTML">SATURDAY</td>
+                <td><button class="button is-link is-rounded is-medium"style="cursor:pointer;" onclick="document.getElementById('sub-details').innerHTML=document.getElementById('erp').innerHTML">ERP (8AM-12PM)</button></td>
+            </tr>
+            <tr>
+              <td class="Text has-text-weight-bold";style="font-size:30px;"style="cursor:pointer;" onclick="document.getElementById('details').innerHTML=document.getElementById('sunday').innerHTML">SUNDAY</td>
+              <td></td>
             </tr>
           </table>
+          </div>
+          </div>
+          <!-- detail -->
+          <div class="column is-one-fifth">
+            <p id="details"></p>
+            <p id="monday" style="display: none;">Subject: Seminar<br>Time: 8AM-11AM<br>ONLINE CLASS</p>
+            <p id="tuesday" style="display: none;">Subject: Webtech<br>Time: 8AM-10AM, 12.30PM-2.30PM<br>ONLINE CLASS<br><br>Subject: English - Struture<br>Time: 2.30PM-4PM<br>ONLINE CLASS</p>
+            <p id="wednesday" style="display: none;">Subject: IP<br>Time: 10AM-11.30AM<br>ONLINE CLASS<br><br>Subject: OS<br>Time: 12PM-2PM<br>ONLINE CLASS<br><br>Subject: SA<br>Time: 2PM-4PM, 4PM-6PM<br>ONLINE CLASS</p>
+            <p id="thursday" style="display: none;">Subject: English - Structure<br>Time: 2.30PM-4PM<br>ONLINE CLASS</p>
+            <p id="friday" style="display: none;">Subject: IP<br>Time: 10AM-11.30AM<br>ONLINE CLASS<br><br>Subject: OS<br>Time: 12PM-2PM<br>ONLINE CLASS</p>
+            <p id="saturday" style="display: none;">Subject: ERP<br>Time: 8AM-10AM, 10AM-12AM<br>ONLINE CLASS</p>
+            <p id="sunday" style="display: none;">WEEKEND<br>No Class</p>
+
+            
+          
+            </div>
+          </div>
            
       </div>
+
+      <p id="sub-details"></p>
+            <p id="seminar" style="display:none;">01418497<br>
+              สัมมนา<br>
+              (Seminar)
+              <br><br>หน่วยกิต (บรรยาย-ปฎิบัติการ): 1
+              <br>วิชาที่ต้องเรียนมาก่อน: 01418221 หรือ 01418232 หรือ 01418233              
+              <br><br>การนำเสนอและอภิปรายหัวข้อที่น่าสนใจทางวิทยาการคอมพิวเตอร์ในระดับปริญญาตรี              
+              <br>Presentation and discussion on current interesting topics in computer science at the bachelor’s degree level.</p>
+            <p id="webtech" style="display:none;">01418442<br>
+              เว็บเทคโนโลยีและเว็บบริการ<br>
+              (Web Technology and Web Services)<br>
+              <br>หน่วยกิต (บรรยาย-ปฎิบัติการ):  3(2-2-5)<br>              
+              วิชาที่ต้องเรียนมาก่อน: 01418211<br>              
+              <br>หลักการเว็บเทคโนโลยีและเว็บบริการ ข้อกำหนดมาตรฐานของเว็บเทคโนโลยี สถาปัตยกรรมและส่วนประกอบ ลักษณะการทำงานและกลไกของระบบเว็บบริการ การพัฒนาโปรแกรมสำเร็จรูปเว็บเทคโนโลยีลักษณะการทำงานและโครงแบบเอพีไอ              
+              <br>Principles of Web technology and services. Standard specification of technology. Architecture and components. Functionalities and mechanisms of Web services systems. Development of Web technology packages. API’s functionalities and configurations.</p>
+            <p id="ip" style="display:none;">01418341<br>
+              ทรัพย์สินทางปัญญาและจรรยาบรรณวิชาชีพ
+              <br>(Intellectual Properties and Professional Ethics)
+              <br><br>หน่วยกิต (บรรยาย-ปฎิบัติการ): 3(3-0-6)              
+              <br><br>ประเภทของทรัพย์สินทางปัญญา การได้มาซึ่งลิขสิทธิ์ สิทธิแต่เพียงผู้เดียวของเจ้าของลิขสิทธิ์การละเมิดลิขสิทธิ์ การใช้โดยธรรม ใบอนุญาตของซอฟต์แวร์เสรีใบอนุญาตของซอฟต์แวร์เปิดเผยรหัส ใบอนุญาตให้ใช้โปรแกรมคอมพิวเตอร์ ครีเอทีฟคอมมอนส์สิทธิบัตร เครื่องหมายการค้าและเครื่องหมายการบริการ นโยบายส่วนบุคคล อาชญากรรมคอมพิวเตอร์กรณีศึกษา
+              <br>Categories of intellectual property. Acquisition of copyright. Exclusive rights of copyright holder. Copyright infringement. Fair use. Free software license. Open source software license. Shrink wrap license. Creative Commons. Patent. Trade mark and service mark. Privacy policy. Computer crime. Case studies.</p>
+            <p id="os" style="display:none;">01418331<br>
+              ระบบปฏิบัติการ
+              <br>(Operating Systems)
+              <br><br>หน่วยกิต (บรรยาย-ปฎิบัติการ): 4(4-0-8)              
+              <br>วิชาที่ต้องเรียนมาก่อน: 01418233              
+              <br><br>พัฒนาการของสถาปัตยกรรมคอมพิวเตอร์และระบบปฏิบัติการ โครงสร้างระบบปฏิบัติการ กระบวนการและสายโยงใย การจัดกำหนดการ การติดตาย ลำดับขั้นของหน่วยความจำ การจัดการหน่วยความจำ หน่วยความจำเสมือน การจัดการระบบแฟ้ม การจัดการระบบรับเข้า/ส่งออก ความมั่นคง การป้องกัน ระบบปฏิบัติการแบบกระจาย
+              <br>Development of computer architecture and operating systems. Operating system structure. Processes and threads. Scheduling. Deadlocks. Memory hierarchy. Memory management. Virtual memory. File system management. Input/output system management. Security. Protection. Distributed operating systems.</p>
+            <p id="sa" style="display:none;">01418321<br>
+              การวิเคราะห์และการออกแบบระบบ
+              <br>(System Analysis and Design)
+              <br><br>หน่วยกิต (บรรยาย-ปฎิบัติการ): 3(2-2-5)              
+              <br>วิชาที่ต้องเรียนมาก่อน: 01418211 และ 01418221              
+              <br><br>ขั้นตอนวิเคราะห์เบื้องต้น เครื่องมือในการวิเคราะห์ระบบ ผังระบบงาน ตารางการตัดสินและต้นไม้การตัดสิน การศึกษาความเป็นไปได้ของปัญหา การวิเคราะห์ความคุ้มค่าในการลงทุน นำเข้า ส่งออกและการออกแบบ การออกแบบวิธีการประมวลผลด้วยคอมพิวเตอร์ การทำเอกสาร การนำไปใช้และการประเมินผล การพิสูจน์การออกแบบกรณีศึกษา
+              <br>Basic analysis steps. System analysis tools. Systems flowchart. Decision table and decision tree. Feasibility study. Cost effective analysis. Input, output and design. Computer process design. Documentation. Implementation and evaluation. Proving the design. Case studies.</p>
+            <p id="erp" style="display:none;">01418342<br>
+              การออกแบบและการพัฒนาระบบการวางแผนทรัพยากรองค์กร
+              <br>(Enterprise Resource Planning System Design and Development)
+              <br><br>หน่วยกิต (บรรยาย-ปฎิบัติการ): 3(2-2-5)              
+              <br>วิชาที่ต้องเรียนมาก่อน: 01418221              
+              <br><br>แนวคิดและพัฒนาการของระบบการวางแผนทรัพยากรองค์กร กรอบงานและสถาปัตยกรรมอีอาร์พี การสร้างตัวแบบและการวิเคราะห์ ระเบียบวิธีการพัฒนาและการทำให้เกิดผล กระบวนการการพัฒนา ปัจจัยความสำเร็จในการทำให้เกิดผล ระบบขององค์กรชั้นนำ กรณีศึกษาและแนวโน้มทางเทคโนโลยี
+              <br>Concept and development of enterprise resource planning system. ERP framework and architecture. Modeling and analysis. Development and implementation methodologies. Development process. Implementation success factors. Leading enterprise systems. Case studies and technology trends.</p>
+            <p id="eng4" style="display:none;">01355203<br>
+            โครงสร้างภาษาอังกฤษเบื้องต้น
+            <br>(Fundamental English Structure)
+            <br><br>หน่วยกิต: 3(3-0-6)
+            <br><br>วิเคราะห์โครงสร้างของภาษาเขียนจากบทความหรือเรื่องที่ตัดตอนมา ซึ่งมีความยากง่ายของภาษาอยู่ในระดับปานกลางให้เห็นและเข้าใจความสัมพันธ์ขององค์ประกอบภายในประโยคและระหว่างประโยคเพื่อเป็นฐานในการอ่าน การเขียน และการแปล
+            <br>Structure analysis of written language based on articles or excerpts at the intermediate language level to gain an insight into the relationships of the elements within the sentence structure and those between sentences. This is to serve as a fundamental basis leading towards development in reading, writing and translation abilities.
+          </p>
       
     
       </section>
@@ -99,6 +176,7 @@
 
   </body>
 </html>
+
 
 
 
